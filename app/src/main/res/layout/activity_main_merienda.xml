@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/breakfasttarslucid" >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="¿Qué Come?"
+        android:textSize="25dp"
+        android:background="@color/food_morado_claro"
+        android:textColor="@color/white"
+        android:height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/textView4" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/food_morado_claro"
+        android:weightSum="4">
+
+        <TextView
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="DESAYUNO"
+            android:textStyle="bold"
+            android:background="@color/food_morado_claro"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/textViewFaseDesayunoTitle"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ALMUERZO"
+            android:background="@color/food_morado_claro"
+            android:textColor="@color/gray"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/textViewFaseAlmuerzoTitle"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CENA"
+            android:background="@color/food_morado_claro"
+            android:textColor="@color/gray"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/textViewFaseCenaTitle"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MERIENDA"
+            android:background="@color/food_morado_claro"
+            android:textColor="@color/gray"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/textViewFaseMeriendaTitle"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <TextView
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Merienda"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/food_morado"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/textViewPlatoFuerteTitle"
+            android:layout_weight="3"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3">
+
+        <TextView
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:background="@color/food_green"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/textViewPlatoFuerte"
+            android:layout_weight="3"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:gravity="center_vertical|center"
+        android:background="@drawable/cutombutton"
+        android:textColor="@color/white"
+        android:layout_marginBottom="1dp"
+      android:id="@+id/buttonContinuar" />
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Describe el menú que mejor se adapte a los que come tu hijo regularmente."
+        android:background="@color/food_morado"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/textViewInformacion"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Selecciona una comida y sus complementos."
+        android:background="@color/food_morado"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/textViewInformacionSeleccion"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

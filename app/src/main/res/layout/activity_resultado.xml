@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/rszlogonew"
+        android:id="@+id/imageView" />
+
+
+    <TextView
+        android:textSize="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/textViewResultadoTomas"
+        android:layout_below="@+id/imageView"
+        />
+
+    <TextView
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Debe ingresar datos para obtener un resultado"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:id="@+id/textViewResultado"
+            android:layout_below="@+id/textViewResultadoTomas"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            android:layout_margin="10dp"
+            android:padding="0dp"
+            android:gravity="center_vertical|center"
+            android:background="@drawable/cutombutton"
+            android:textColor="@color/white"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/buttonFinalizarr"
+            android:layout_below="@+id/textViewResultado"
+            />
+
+    <TextView
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Según la dieta que su hijo consume, esta es la cantidad recomendada del complemento Pediasure"
+            android:background="@color/food_morado"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:id="@+id/textViewInformacion"
+            android:layout_alignParentBottom="true"
+            />
+
+
+</RelativeLayout>

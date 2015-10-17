@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="¿Cómo se alimenta tu hijo?"
+        android:background="@color/food_morado_claro"
+        android:textColor="@color/white"
+        android:height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/textView4" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/food_morado_clear"
+            android:layout_below="@+id/textView4"
+            android:padding="0dp"
+            android:id="@+id/layoutEdad"
+            android:weightSum="2">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Edad/Sexo"
+                android:textStyle="bold"
+                android:textColor="@color/food_morado"
+                android:id="@+id/textViewEdad"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+
+                />
+           <Spinner
+                android:id="@+id/spinnerEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@drawable/rszportadaextend"
+        android:padding="5dp"
+        android:id="@+id/layoutInterno"
+        android:layout_below="@+id/layoutEdad"
+        android:weightSum="2">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:padding="10dp"
+        android:gravity="center_vertical|center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cutombutton"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/buttonIniciar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+
+
+</RelativeLayout>
