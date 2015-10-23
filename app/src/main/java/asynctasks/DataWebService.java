@@ -35,7 +35,7 @@ public class DataWebService extends AsyncTask<String , Void, String> {
     private static String SOAP_ACTION1 = "http://tempuri.org/HelloWorld";
     private static String NAMESPACE = "http://tempuri.org/";
     private static String METHOD_NAME1 = "HelloWorld";
-    private static String URLWS = "http://lordkortex-001-site1.smarterasp.net/pediasureService.asmx?wsdl";
+    private static String URLWS = "http://www.pediasureapp.work/pediasureService.asmx?wsdl";
 
     private ProgressDialog Brockerdialog;
 
